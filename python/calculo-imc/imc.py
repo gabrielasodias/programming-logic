@@ -1,12 +1,13 @@
 print('\nIMC')
 print('\nOBS: Utilize ponto (.) ao invés de virgula (,) para números decimais.\n')
-peso = float(input('Digite seu peso: '))
-altura = float(input('Digite sua altura: '))
+peso = float(input('Digite seu peso: ')) #Entrada do peso
+altura = float(input('Digite sua altura: ')) #Entrada da altura
 
-imc = peso / altura **2
+imc = peso / altura **2 #Fórmula para calcular o imc
 
-print(f'\nSeu IMC é: {imc:,.1f}')
+print(f'\nSeu IMC é: {imc:,.1f}') #imc exibido com formatação de uma casa decimal
 print('Sua classificação é: ')
+#Classificações de acordo com a tabela de imc
 if imc < 18.5:
     print('Magreza.')
 elif imc >= 18.5 and imc <= 24.9:
